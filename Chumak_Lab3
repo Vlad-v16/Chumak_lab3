@@ -1,0 +1,27 @@
+#include <iostream>
+#include <windows.h>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	
+	int a;
+	
+	cout << "Факторіал числа: ";
+	cin >> a;
+
+	int b = 1;
+	int res = 1;
+
+	while (b <= a) 
+	{
+		res = res * b;
+		cout << res << endl;
+		b++;
+	}
+	return 0;
+}
